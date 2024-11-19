@@ -3,20 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Blog</title>
+    <title>Static Blogging Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="bloglist.html">Blogs</a>
-        </nav>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="brand" id="brand">The GK Blog</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="bloglist.html">Blogs</a>
+                <a href="create.html">Create Blog</a>
+                
+            </div>
+        </div>
+    </nav>
+    <style>
+        body {
+          background-image: url('back.webp');
+        }
+        </style>
+    <header class="header">
+        <div class="container">
+            <h1>Welcome to The GK Blog</h1>
+            <p>This is a platform where I share my thoughts and you also can read and share your thoughts.</p>
+        </div>
     </header>
-    <main>
-        <h1>Welcome to My Blogging Website</h1>
-        <p>Explore, read, and enjoy my thoughts and stories.</p>
-        <a href="bloglist.html" class="btn">View Blogs</a>
+    <main class="main-content">
+        <div class="container">
+            <section class="intro">
+                <h2>About Us</h2>
+                <p>We provide a platform for bloggers to share their stories, ideas, and insights with the world.</p>
+            </section>
+        </div>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Static Blogging Website. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

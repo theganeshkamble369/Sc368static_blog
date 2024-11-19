@@ -1,37 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    background-color: #1a1aa0;
+    color: #2e2828;
 }
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-header nav a {
-    color: #fff;
+.navbar {
+    background-image: 'back.webp';
+    color: rgb(212, 22, 22);
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    color: white;
     text-decoration: none;
-    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s;
 }
-header nav a:hover {
-    text-decoration: underline;
+nav a:hover {
+    color: #18bc9c;
 }
-main {
-    padding: 20px;
+.header {
+    background: url('header-bg.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
     text-align: center;
 }
-h1 {
-    color: #333;
+.header h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: rgb(17, 17, 191);
+    font-family: Jazzlet;
+    font-weight: bold;
+    font-size: 60px;
+    max-width: 1400px;
+    display: inline;
+    background-color: #fcf113;
+    box-shadow: 10px 0 0 #fcf113, -10px 0 0 #fcf113;
+    -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
 }
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    color: white;
-    background: #007BFF;
+.header p {
+    font-size: 1.2rem;
+    font-family: Georgia;
+    background-color: #18bc9c;
+    padding-left: 1px ;
+    padding-top:1px ;
+    padding-bottom: 1px ;
+    padding-right: 1px ;
+}
+.main-content {
+    padding: 40px 0;
+}
+.intro, .blogs, .blog-post, .create-blog-form {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(2, 2, 2, 0.1);
+    margin-bottom: 20px;
+}
+.blogs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding:100px;
+    background-color:white;
+    background-image: "back.webp";
+}
+.blog-summary1{
+    padding:100px;
+    margin: 10px;
+    -webkit-margin-collapse: 100px;
+    background-image: 'back.webp';
+    
+}
+.blog-summary2{
+    padding:100px;
+    
+}
+.blog-summary h2 {
+    margin-top: 0;
+}
+.blog-summary a {
     text-decoration: none;
-    border-radius: 5px;
+    color[_{{{CITATION{{{_1{](https://github.com/DianaMurchich/diplom/tree/02b2990c9221522f01cd7b90efa39b2102d3cc8c/main_pages%2Fblog_post.php)[_{{{CITATION{{{_2{](https://github.com/theamazinglesson/php-file-upload/tree/283821e1a299eddf0bee0f5d71e2645cf261ad47/index.php)[_{{{CITATION{{{_3{](https://github.com/JayaprakashRavichandran/BlogManagement/tree/2faac15b7a9f2a6ab71cda0b5e2c641bb7ac837f/application%2Fviews%2FBlogHandler.php)[_{{{CITATION{{{_4{](https://github.com/derryderajat/mote/tree/9ffa30dbc0f16ced408b251b648e405ec4d04389/blog%2Fadd_post.php)
+    }
+    * {box-sizing: border-box;}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
-.btn:hover {
-    background: #0056b3;
+.mySlides {
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.h1 {
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 60px;
+    max-width: 1400px;
+    display: inline;
+    background-color: #fcf113;
+    box-shadow: 10px 0 0 #fcf113, -10px 0 0 #fcf113;
+    -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
